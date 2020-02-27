@@ -2,10 +2,12 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 function SavedList({ list }) {
+  console.log(list)
   return (
     <div className="saved-list">
       <h3>Saved Movies:</h3>
       {list.map(movie => {
+        
         return (
           <NavLink
             to={`/movies/${movie.id}`}
